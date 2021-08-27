@@ -72,14 +72,9 @@ function viewMedia() {
                 video.classList.add("media-gallery");
                 video.src = window.URL.createObjectURL(cursor.value.media);
 
-                video.addEventListener("mouseenter", function () {
-                    video.currentTime = 0;
-                    video.play();
-                });
-
-                video.addEventListener("mouseleave", function () {
-                    video.pause();
-                });
+                video.autoplay = true;
+                video.controls = true;
+                video.loop = true;
 
                 let mediaContainer = div.querySelector(".media-container");
                 mediaContainer.appendChild(video);
