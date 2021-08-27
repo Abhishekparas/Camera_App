@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+        <link rel="preconnect" href="https://fonts.gstatic.com" />
+        <link
+            href="https://fonts.googleapis.com/icon?family=Material+Icons"
+            rel="stylesheet"
+        />
+        <link rel="stylesheet" href="./style.css" />
+    </head>
+
+    <body>
+        <div class="video-container">
+            <video autoplay style="transform: scale(1)"></video>
+        </div>
+        <div class="filters">
+            <div class="filter" style="background-color: #ed4c673f"></div>
+            <div class="filter" style="background-color: #0651dd42"></div>
+            <div class="filter" style="background-color: #00943146"></div>
+            <div class="filter" style="background-color: #f7a11f52"></div>
+            <div class="filter" style="background-color: #fda7df44"></div>
+            <div class="filter"></div>
+        </div>
+        <div class="zoom">
+            <div class="zoom-in">+</div>
+            <div class="zoom-out">-</div>
+        </div>
+        <button id="record">
+            <div class="record-btn-in"></div>
+        </button>
+        <button id="capture">
+            <div class="capture-btn-in"></div>
+        </button>
+        <button id="gallery">
+            <span class="material-icons" style="font-size: 2rem; color: white">
+                photo
+            </span>
+        </button>
+        <script src="./script.js"></script>
+        <script src="./dbScript.js"></script>
+    </body>
+</html>
